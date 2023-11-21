@@ -1,9 +1,7 @@
 from flask import Flask
-
 app = Flask(__name__)
-@app.route('/', methods['GET']) #routing it to the home page
-def home():
-    return "hello world"
-
+@app.route("/")#URL leading to method
+def hello(): # Name of the method
+ return("Hello World!") #indent this line
 if __name__ == "__main__":
-    app.run(port=5000, debug=true) #function call by the app
+ app.run(host='0.0.0.0', port='4232') # indent this line
