@@ -4,5 +4,4 @@ app = Flask(__name__)
 def hello(): # Name of the method
  return("Hello World!") #indent this line
 if __name__ == "__main__":
- from waitress import serve # new code
- serve(app, host="0.0.0.0", port=8080)
+    app.run(host='0.0.0.0', port='8080') 
